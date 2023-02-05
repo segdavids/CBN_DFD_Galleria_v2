@@ -14,6 +14,7 @@ import { LandingLayoutComponent } from './landing-layout/landing-layout.componen
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatExpansionModule} from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -27,7 +28,8 @@ import { NgChartsModule } from 'ng2-charts';
     HealthComponent,
     InfrastructureComponent,
     ExportComponent,
-    LandingLayoutComponent
+    LandingLayoutComponent,
+    ProductsComponent
   ],
   imports: [
     CommonModule,

@@ -53,6 +53,10 @@ body { margin: 0; font-family: 'Manrope', sans-serif; }
     background-repeat: no-repeat;
 }
 
+.bg-img {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/images/header-bg.png);
+}
+
 .stats > p:first-child {
     @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold text-center md:text-left
 }
