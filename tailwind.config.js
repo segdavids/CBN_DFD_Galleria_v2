@@ -11,6 +11,9 @@ module.exports = {
         customBlack2: '#161616',
         grayText: '#999999',
         grayText2: '#ffffffb3'
+      },
+      fontFamily: {
+        jakarta: ['Plus Jakarta Sans']
       }
     },
   },

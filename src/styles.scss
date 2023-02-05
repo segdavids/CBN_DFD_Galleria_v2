@@ -33,9 +33,15 @@ $dfd-galleria-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($dfd-galleria-theme);
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Manrope', sans-serif; }
+
+.padding-x {
+    @apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-20
+}

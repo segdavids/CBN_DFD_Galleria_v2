@@ -1,1 +1,17 @@
-<p>header works!</p>
+<header class="padding-x flex py-5 md:hidden justify-between items-center">
+    <img src="assets/logo.svg" class="w-[150px]" alt="">
+
+    <button class="outline-none border-none">
+        <img src="assets/icons/menu.svg" alt="">
+    </button>
+</header>
+
+<header class="padding-x hidden py-5 md:flex justify-between items-center">
+    <img src="assets/logo.svg" class="w-[200px] xl:w-[300px]" alt="">
+
+    <nav class="flex items-center gap-5 lg:gap-8 xl:gap-[50px]">
+        <a routerLink="/about" routerLinkActive="active-nav" class="text-grayText font-semibold">About Us</a>
+        <a routerLink="/sectors" routerLinkActive="active-nav" class="text-grayText font-semibold">Sectors</a>
+        <a routerLink="/partners" routerLinkActive="active-nav" class="text-grayText font-semibold">Partners</a>
+    </nav>
+</header>
