@@ -13,6 +13,7 @@ import { ExportComponent } from './export/export.component';
 import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatExpansionModule} from '@angular/material/expansion';
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -32,7 +33,8 @@ import { MatExpansionModule} from '@angular/material/expansion';
     CommonModule,
     LandingRoutingModule,
     SharedModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgChartsModule
   ]
 })
 export class LandingModule { }

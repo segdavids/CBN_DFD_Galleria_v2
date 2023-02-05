@@ -65,7 +65,23 @@
         Intervention Investment By Sector
     </h1>
     
-    
+    <div class="grid gap-4 md:grid-cols-2 md:items-center mt-6 lg:mt-12">
+        <div style="position: relative; width:100%">
+            <canvas baseChart class="w-full"
+                    [data]="chartData"
+                    [options]="chartOptions"
+                    [type]="'doughnut'">
+            </canvas>
+        </div>
+
+        <div class="mx-auto w-fit">
+            <div *ngFor="let item of labels" class="lg:my-2 cursor-pointer flex items-center gap-4 font-jakarta text-[#161E17]">
+                <div class="w-3 h-3 rounded-full" [style.background-color]="item.color"></div>
+                <div>{{item.label}}</div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 
