@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-focal-sectors-cards',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./focal-sectors-cards.component.scss']
 })
 export class FocalSectorsCardsComponent {
-
+  @Input() imageUrl!: string;
+  @Input() cardBody !: string;
+  @Input() linkUrl !: string;
 }

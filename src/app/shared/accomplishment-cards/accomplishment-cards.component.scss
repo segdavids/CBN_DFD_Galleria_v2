@@ -1,0 +1,7 @@
+.hover-me img {
+    transition: 0.8s;
+}
+
+.hover-me:hover img {
+    transform: scale(1.4);
+}

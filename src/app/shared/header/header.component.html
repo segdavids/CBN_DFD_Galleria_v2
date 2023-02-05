@@ -1,17 +1,18 @@
-<header class="padding-x flex py-5 md:hidden justify-between items-center">
+<nav class="padding-x flex py-5 md:hidden justify-between items-center">
     <img src="assets/logo.svg" class="w-[150px]" alt="">
 
     <button class="outline-none border-none">
         <img src="assets/icons/menu.svg" alt="">
     </button>
-</header>
+</nav>
 
-<header class="padding-x hidden py-5 md:flex justify-between items-center">
-    <img src="assets/logo.svg" class="w-[200px] xl:w-[300px]" alt="">
+<nav class="padding-x hidden py-5 md:flex justify-between items-center">
+    <img src="assets/logo.svg" class="w-[200px] xl:w-[250px]" alt="">
 
-    <nav class="flex items-center gap-5 lg:gap-8 xl:gap-[50px]">
-        <a routerLink="/about" routerLinkActive="active-nav" class="text-grayText font-semibold">About Us</a>
-        <a routerLink="/sectors" routerLinkActive="active-nav" class="text-grayText font-semibold">Sectors</a>
-        <a routerLink="/partners" routerLinkActive="active-nav" class="text-grayText font-semibold">Partners</a>
-    </nav>
-</header>
+    <div class="flex items-center gap-5 lg:gap-8 xl:gap-[50px]">
+        <a routerLink="/about" routerLinkActive="active-nav" class="text-grayText font-jakarta font-medium">About Us</a>
+        <a routerLink="/sectors" routerLinkActive="active-nav" class="text-grayText font-jakarta font-medium">Sectors</a>
+        <a routerLink="/partners" routerLinkActive="active-nav" class="text-grayText font-jakarta font-medium">Partners</a>
+        <button class="px-10 py-[12px] rounded-lg font-jakarta bg-customGreen text-white font-medium text-lg">Sign In</button>
+    </div>
+</nav>
