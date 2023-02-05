@@ -1,9 +1,13 @@
 <nav class="padding-x flex py-5 md:hidden justify-between items-center">
     <img src="assets/logo.svg" class="w-[150px]" alt="">
 
-    <button class="outline-none border-none">
-        <img src="assets/icons/menu.svg" alt="">
-    </button>
+    <button class="outline-none border-none" mat-button [matMenuTriggerFor]="menu"> <img src="assets/icons/menu.svg" alt=""></button>
+    <mat-menu #menu="matMenu">
+        <a routerLink="/about" class="font-semibold text-base text-center block p-3 w-[300px] text-grayText cursor-pointer">About Us</a>
+        <a routerLink="/sectors" class="font-semibold text-base text-center block p-3 w-[300px] text-grayText cursor-pointer">Sectors</a>
+        <a routerLink="/partners" class="font-semibold text-base text-center block p-3 w-[300px] text-grayText cursor-pointer">Partners</a>
+        <div class="mx-auto w-fit"><button class="px-5 py-[6px] rounded-md font-jakarta bg-customGreen text-white font-medium text-sm">Sign In</button> </div>
+    </mat-menu>
 </nav>
 
 <nav class="padding-x hidden py-5 md:flex sticky top-0 justify-between items-center">
