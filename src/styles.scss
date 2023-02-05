@@ -43,7 +43,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: 'Manrope', sans-serif; }
 
 .padding-x {
-    @apply px-5 md:px-8 lg:px-10 xl:px-16 2xl:px-20 overflow-x-hidden
+    @apply px-5 md:px-8 lg:px-10 xl:px-16 2xl:px-20
 }
 
 .cbn-bg {
