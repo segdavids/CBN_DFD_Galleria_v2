@@ -54,11 +54,11 @@ body { margin: 0; font-family: 'Manrope', sans-serif; }
 }
 
 .stats > p:first-child {
-    @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold
+    @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold text-center md:text-left
 }
 
 .stats > p:last-child {
-    @apply font-semibold text-base md:text-lg
+    @apply font-semibold text-base md:text-lg text-center md:text-left
 }
 
 mat-accordion {
