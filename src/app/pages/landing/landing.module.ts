@@ -12,6 +12,7 @@ import { InfrastructureComponent } from './infrastructure/infrastructure.compone
 import { ExportComponent } from './export/export.component';
 import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     LandingRoutingModule,
-    SharedModule
+    SharedModule,
+    MatExpansionModule
   ]
 })
 export class LandingModule { }

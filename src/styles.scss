@@ -45,3 +45,39 @@ body { margin: 0; font-family: 'Manrope', sans-serif; }
 .padding-x {
     @apply px-5 md:px-8 lg:px-10 xl:px-16 2xl:px-20
 }
+
+.cbn-bg {
+    background-image: url(assets/images/cbn-logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stats > p:first-child {
+    @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold
+}
+
+.stats > p:last-child {
+    @apply font-semibold text-base md:text-lg
+}
+
+mat-accordion {
+    display: grid;
+    gap: 14px;
+}
+
+mat-accordion ol, ul, menu {
+     list-style: revert !important; 
+     margin: revert !important; 
+     padding: revert !important; 
+}
+
+mat-expansion-panel {
+    border-radius: 8px !important;
+    background-color: #3E3E3F !important;
+    color: #F0EDED !important;
+}
+
+.farm-crop-bg {
+    background-image: url(assets/images/agriculture/farm-crop.png);
+}

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./agriculture.component.scss']
 })
 export class AgricultureComponent {
-
+  panelOpenState = false;
 }
