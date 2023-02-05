@@ -81,3 +81,8 @@ mat-expansion-panel {
 .farm-crop-bg {
     background-image: url(assets/images/agriculture/farm-crop.png);
 }
+
+.mat-mdc-menu-panel.mat-mdc-menu-panel {
+    max-width: unset !important;
+    border-radius: 8px !important;
+}
