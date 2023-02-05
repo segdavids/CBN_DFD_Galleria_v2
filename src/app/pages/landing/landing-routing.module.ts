@@ -9,6 +9,7 @@ import { InfrastructureComponent } from './infrastructure/infrastructure.compone
 import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { MsmeComponent } from './msme/msme.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'infrastructure', component: InfrastructureComponent },
       { path: 'manufacturing', component: ManufacturingComponent },
       { path: 'msme', component: MsmeComponent },
+      { path: 'products', component: ProductsComponent},
       {
         path: '**',
         redirectTo: '',
