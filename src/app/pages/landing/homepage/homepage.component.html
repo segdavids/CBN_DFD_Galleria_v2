@@ -47,7 +47,7 @@
         The winning offer doesn't always have to be the highest. Our Walter buying agent help with making the best offer for your situation. 
     </div>
 
-    <div class="mt-20 lg:mt-24 grid md:grid-cols-2 gap-10">
+    <div class="mt-20 lg:mt-24 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
         <app-accomplishment-cards cardBody="States Reached" cardHeader="36" imageUrl="assets/images/accomplishments/states-reached.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Sectors Covered" cardHeader="7" imageUrl="assets/images/accomplishments/sectors-covered.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Projects" cardHeader="3M+" imageUrl="assets/images/accomplishments/projects.png"></app-accomplishment-cards>
@@ -60,13 +60,13 @@
 </section>
 
 <!-- Intervention Investment By Sector -->
-<section class="padding-x bg-white py-10 md:py-14 xl:py-24">
+<section class="padding-x bg-white py-10">
     <h1 class="text-center text-customGreen font-extrabold text-3xl md:text-5xl lg:text-6xl">
         Intervention Investment By Sector
     </h1>
     
-    <div class="grid gap-4 md:grid-cols-2 md:items-center mt-6 lg:mt-12">
-        <div style="position: relative; width:100%">
+    <div class="grid gap-4 md:grid-cols-2 md:items-center mt-6 lg:mt-10">
+        <div class="mx-auto" style="position: relative; width:100%; max-width: 400px;">
             <canvas baseChart class="w-full"
                     [data]="chartData"
                     [options]="chartOptions"
@@ -91,7 +91,7 @@
         Focal Sectors
     </h1>
 
-    <div class="mt-20 lg:mt-24 grid md:grid-cols-2 gap-10">
+    <div class="mt-20 lg:mt-24 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
         <app-focal-sectors-cards cardBody="Export" linkUrl="/export" imageUrl="assets/images/focal-sectors/export.png"></app-focal-sectors-cards>
         <app-focal-sectors-cards cardBody="Agriculture" linkUrl="/agriculture" imageUrl="assets/images/focal-sectors/agriculture.png"></app-focal-sectors-cards>
         <app-focal-sectors-cards cardBody="Health" linkUrl="/health" imageUrl="assets/images/focal-sectors/health.png"></app-focal-sectors-cards>
