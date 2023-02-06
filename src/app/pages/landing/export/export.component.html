@@ -1,51 +1,58 @@
-<header class="bg-img">
+<header>
     <app-header></app-header>
 
-    <div class="padding-x py-10 md:py-14 xl:pb-24 font-jakarta">
+    <!-- <div class="padding-x py-10 md:py-14 xl:pb-24 font-jakarta">
         <h1 data-aos="fade-down" data-aos-duration="1500" class="text-customGreen font-extrabold text-3xl md:text-5xl lg:text-6xl">Export</h1>
 
         <div class="mt-10">
             <img class="w-full object-cover rounded-lg" src="assets/images/export/export.png" alt="">
         </div>
-    </div>
+    </div> -->
 </header>
 
-<div class="padding-x cbn-bg grid md:grid-cols-2 lg:grid-cols-3  text-white py-10 gap-10 xl:gap-[60px] md:py-14 xl:py-20 bg-customBlack2">
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-        <p class="">31</p>
-        <p>States Reached</p>
+<div class="mt-10 padding-x grid md:grid-cols-[40%_1fr] gap-6">
+    <div class="relative md:h-full">
+        <img class="w-full h-[200px] md:h-full object-cover rounded-lg" src="assets/images/export/export.png" alt="">
+        <div class="absolute h-full w-full gradient_ top-0 left-0"></div>
+        <h1 data-aos="fade-down" data-aos-duration="1000" class="text-white absolute top-5 left-5 font-extrabold text-3xl md:text-5xl">Export</h1>
     </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
-        <p>12</p>
-        <p>Sectors Covered</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
-        <p>7.8k</p>
-        <p>Projects</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="700">
-        <p>135k</p>
-        <p>Jobs Created</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="900">
-        <p>12,000Ha</p>
-        <p>Lands Cultivated</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1100">
-        <p>11K</p>
-        <p>Farms Empowerd</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1300">
-        <p>31</p>
-        <p>Exports</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1500">
-        <p>1.2k</p>
-        <p>Green field projects financed</p>
-    </div>
-    <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1700">
-        <p>7.4k</p>
-        <p>Brown field projects financed</p>
+    <div class="rounded-lg cbn-bg grid md:grid-cols-3 px-4  text-[#F0EDED] py-10 gap-10 md:py-14">
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+            <p class="">31</p>
+            <p>States Reached</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
+            <p>12</p>
+            <p>Sectors Covered</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+            <p>7.8k</p>
+            <p>Projects</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="700">
+            <p>135k</p>
+            <p>Jobs Created</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="900">
+            <p>12,000Ha</p>
+            <p>Lands Cultivated</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1100">
+            <p>11K</p>
+            <p>Farms Empowerd</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1300">
+            <p>31</p>
+            <p>Exports</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1500">
+            <p>1.2k</p>
+            <p>Green field projects financed</p>
+        </div>
+        <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1700">
+            <p>7.4k</p>
+            <p>Brown field projects financed</p>
+        </div>
     </div>
 </div>
 
@@ -53,7 +60,7 @@
     <div class="grid lg:grid-cols-[1fr_40%] lg:gap-[14px]">
         <div>
             <mat-accordion>
-                <mat-expansion-panel >
+                <mat-expansion-panel [expanded]="true">
                   <mat-expansion-panel-header>
                     <mat-panel-title>
                       <div class="text-[#F0EDED]">NESF</div>
