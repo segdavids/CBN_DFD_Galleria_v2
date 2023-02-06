@@ -39,6 +39,10 @@ $dfd-galleria-theme: mat.define-light-theme((
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Manrope', sans-serif; }
 
@@ -51,6 +55,7 @@ body { margin: 0; font-family: 'Manrope', sans-serif; }
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #009C19 !important;
 }
 
 .bg-image {
@@ -58,11 +63,11 @@ body { margin: 0; font-family: 'Manrope', sans-serif; }
 }
 
 .stats > p:first-child {
-    @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold text-center md:text-left
+    @apply font-jakarta text-2xl xs:text-3xl lg:text-5xl font-bold text-center
 }
 
 .stats > p:last-child {
-    @apply font-semibold text-base md:text-lg text-center md:text-left
+    @apply font-semibold text-base md:text-lg text-center
 }
 
 mat-accordion {
@@ -78,7 +83,7 @@ mat-accordion ol, ul, menu {
 
 mat-expansion-panel {
     border-radius: 8px !important;
-    background-color: #3E3E3F !important;
+    background-color: #009C19 !important;
     color: #F0EDED !important;
 }
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChartData, ChartConfiguration, ChartEvent } from 'chart.js';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-homepage',
@@ -64,4 +65,30 @@ export class HomepageComponent {
       },
     },
   };
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    autoplay: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 2
+      },
+      650: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      940: {
+        items: 6
+      }
+    },
+    nav: false
+  }
 }

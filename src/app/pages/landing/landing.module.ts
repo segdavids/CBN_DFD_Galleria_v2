@@ -15,7 +15,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { MatExpansionModule} from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
 import { ProductsComponent } from './products/products.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -36,7 +36,8 @@ import { ProductsComponent } from './products/products.component';
     LandingRoutingModule,
     SharedModule,
     MatExpansionModule,
-    NgChartsModule
+    NgChartsModule,
+    CarouselModule
   ]
 })
 export class LandingModule { }

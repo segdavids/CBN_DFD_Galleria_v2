@@ -53,7 +53,7 @@
         <app-accomplishment-cards cardBody="Projects" cardHeader="3M+" imageUrl="assets/images/accomplishments/projects.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Jobs Created" cardHeader="15M+" imageUrl="assets/images/accomplishments/jobs-created.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Farmers Empowered" cardHeader="4M+" imageUrl="assets/images/accomplishments/farmers-empowered.png"></app-accomplishment-cards>
-        <app-accomplishment-cards cardBody="Lands Cultivated" cardHeader="5M+" imageUrl="assets/images/focal-sectors/agriculture.png"></app-accomplishment-cards>
+        <app-accomplishment-cards cardBody="Lands Cultivated" cardHeader="5M+ Ha" imageUrl="assets/images/focal-sectors/agriculture.jpg"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Youth Empowered" cardHeader="758K" imageUrl="assets/images/accomplishments/states-reached-2.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Green Field Projects Financed" cardHeader="1127" imageUrl="assets/images/accomplishments/green-field.png"></app-accomplishment-cards>
         <app-accomplishment-cards cardBody="Brown Field Projects Financed" cardHeader="1222" imageUrl="assets/images/accomplishments/brown-field.png"></app-accomplishment-cards>
@@ -66,8 +66,8 @@
         Intervention Investment By Sector
     </h1>
     
-    <div class="grid gap-4 md:grid-cols-2 md:items-center mt-6 lg:mt-10">
-        <div class="mx-auto" style="position: relative; width:100%; max-width: 400px;">
+    <div class="grid gap-4 md:grid-cols-2 md:justify-center md:items-center mt-6 lg:mt-10">
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="mx-auto w-full" style="position: relative; max-width: 500px;">
             <canvas baseChart class="w-full"
                     [data]="chartData"
                     [options]="chartOptions"
@@ -75,7 +75,7 @@
             </canvas>
         </div>
 
-        <div class="mx-auto w-fit">
+        <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" class="mx-auto md:mx-0 w-fit">
             <div *ngFor="let item of labels" class="lg:my-2 cursor-pointer flex items-center gap-4 font-jakarta text-[#161E17]">
                 <div class="w-3 h-3 rounded-full" [style.background-color]="item.color"></div>
                 <div>{{item.label}}</div>
@@ -93,8 +93,8 @@
     </h1>
 
     <div class="mt-20 lg:mt-24 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
-        <app-focal-sectors-cards cardBody="Export" linkUrl="/export" imageUrl="assets/images/focal-sectors/export.png"></app-focal-sectors-cards>
-        <app-focal-sectors-cards cardBody="Agriculture" linkUrl="/agriculture" imageUrl="assets/images/focal-sectors/agriculture.png"></app-focal-sectors-cards>
+        <app-focal-sectors-cards cardBody="Export" linkUrl="/export" imageUrl="assets/images/focal-sectors/export.jpg"></app-focal-sectors-cards>
+        <app-focal-sectors-cards cardBody="Agriculture" linkUrl="/agriculture" imageUrl="assets/images/focal-sectors/agriculture.jpg"></app-focal-sectors-cards>
         <app-focal-sectors-cards cardBody="Health" linkUrl="/health" imageUrl="assets/images/focal-sectors/health.png"></app-focal-sectors-cards>
         <app-focal-sectors-cards cardBody="MSMEs" linkUrl="/msme" imageUrl="assets/images/focal-sectors/msme.png"></app-focal-sectors-cards>
         <app-focal-sectors-cards cardBody="Infrastructure & Energy" linkUrl="/infrastructure" imageUrl="assets/images/focal-sectors/infrastructure.png"></app-focal-sectors-cards>
@@ -109,12 +109,74 @@
     <div class="text-[#666666] font-medium mt-2.5 mb-8 text-center">
         The winning offer doesn't always have to be the highest. Our Walter buying agent help with making the best offer for your situation. 
     </div>
-    <div class="mb-8 grid md:grid-cols-2 gap-4 md:gap-2 lg:gap-2 lg:grid-cols-4 justify-center items-center">
-        <img src="assets/images/partners/uba.png" alt="">
-        <img src="assets/images/partners/union.png" alt="">
-        <img src="assets/images/partners/sterling.png" alt="">
-        <img src="assets/images/partners/unity.png" alt="">
+    <div class="mb-8">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/uba.png" alt="">
+            </ng-template>  
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/union.png" alt="">
+            </ng-template>  
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/sterling.png" alt="">
+            </ng-template>  
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/unity.png" alt="">
+            </ng-template> 
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/providus.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/rand.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/jaiz.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/citi.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/unity.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/chartered.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/fsdh.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/stanbic.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/keystone.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/nova.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/wema.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/polaris.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/gtb.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/titan.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/eco.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/sunTrust.png" alt="">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/partners/globus.png" alt="">
+            </ng-template>
+        </owl-carousel-o>
     </div>
+    
     <div class="mx-auto w-fit">
         <button routerLink="/partners" class="px-14 py-[12px] rounded-lg font-jakarta bg-customGreen text-white font-medium text-lg">View All</button>
     </div>
