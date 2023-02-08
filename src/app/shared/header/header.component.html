@@ -1,0 +1,33 @@
+<nav class="padding-x flex py-5 md:hidden sticky top-0 bg-inherit bg-opacity-100  justify-between items-center">
+    <img src="assets/logo.svg" routerLink="/" class="cursor-pointer w-[180px]" alt="">
+
+    <button class="outline-none border-none" mat-button [matMenuTriggerFor]="menu"> <img src="assets/icons/menu.svg" alt=""></button>
+    <mat-menu #menu="matMenu">
+        <a routerLink="/" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Home</a>
+        <a routerLink="/about" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">About Us</a>
+        <a routerLink="/sectors" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Sectors</a>
+        <a routerLink="/partners" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Partners</a>
+        <a class="mx-auto block p-3"><button class="px-5 py-[6px] rounded-md font-jakarta w-full bg-customGreen text-white font-medium text-sm">Sign In</button> </a>
+    </mat-menu>
+</nav>
+
+<nav class="padding-x hidden py-5 md:flex sticky top-0 bg-inherit bg-opacity-100 justify-between items-center">
+    <img src="assets/logo.svg" routerLink="/"class="cursor-pointer w-[200px] xl:w-[250px]" alt="">
+
+    <div class="flex items-center gap-5 lg:gap-8 xl:gap-[50px]">
+        <a routerLink="/" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact: true}" class="text-customBlack font-jakarta font-medium">Home</a>
+        <a routerLink="/about" routerLinkActive="active-nav" class="text-customBlack font-jakarta font-medium">About Us</a>
+        <div [matMenuTriggerFor]="sectorsMenu" routerLinkActive="active-nav" class="text-customBlack cursor-pointer font-jakarta font-medium">Sectors</div>
+        <mat-menu #sectorsMenu="matMenu" xPosition="before">
+            <a routerLink="/export" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Export</a>
+            <a routerLink="/msme" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">MSMEs</a>
+            <a routerLink="/agriculture" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Agriculture</a>
+            <a routerLink="/health" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Health Care</a>
+            <a routerLink="/infrastructure" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Infrastructure and Energy</a>
+            <a routerLink="/manufacturing" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Manufacturing</a>
+        </mat-menu>
+        
+        <a routerLink="/partners" routerLinkActive="active-nav" class="text-customBlack font-jakarta font-medium">Partners</a>
+        <button class="px-10 py-[12px] rounded-lg font-jakarta bg-customGreen text-white font-medium text-lg">Sign In</button>
+    </div>
+</nav>
