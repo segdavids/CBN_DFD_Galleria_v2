@@ -1,10 +1,8 @@
 <div class="rounded-lg text-white relative hover-me overflow-hidden">
-    <img [src]="imageUrl" class="rounded-lg object-cover w-full lg:h-[400px]" alt="">
+    <img [src]="imageUrl" class="rounded-lg object-cover w-full md:h-[300px]" alt="">
 
-    <div class="absolute h-full w-full gradient_ top-0 left-0"></div>
-
-    <div data-aos="fade-down" data-aos-duration="1000" class="absolute bottom-10 lg:bottom-12 left-6 md:left-10">
-        <div class="font-extrabold font-jakarta text-3xl xs:text-4xl md:text-5xl lg:text-6xl">{{cardHeader}}</div>
-        <div class="font-semibold md:text-lg">{{cardBody}}</div>
+    <div data-aos="fade-down" data-aos-duration="1000" class="absolute bottom-0 left-0 rounded-lg p-6 bg-customGreen text-white">
+        <div class="font-[900] text-3xl xs:text-[48px]">{{cardHeader}}</div>
+        <div class="text-lg mt-2 font-light md:text-xl new-line">{{cardBody}}</div>
     </div>
 </div>

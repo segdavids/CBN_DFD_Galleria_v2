@@ -1,5 +1,9 @@
 a:hover {
     color: white;
     text-decoration: underline;
+    font-weight: 500;
+}
 
+.socials {
+    @apply w-8 md:w-12
 }

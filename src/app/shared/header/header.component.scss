@@ -1,3 +1,19 @@
 .active-nav {
-    @apply text-customGreen
+    @apply text-customGreen relative
+}
+
+.active-nav::after {
+    @apply max-w-[20px] h-[2px] w-full absolute bottom-[-6px] left-0 bg-customGreen;
+    content: "";
+    animation-name: grow;
+    animation-duration: 0.5s;
+}
+
+@keyframes grow {
+    0% {
+        max-width: 0;
+    }
+    100% {
+        max-width: 20px;
+    }
 }

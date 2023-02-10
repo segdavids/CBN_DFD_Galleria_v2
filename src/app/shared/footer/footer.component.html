@@ -1,27 +1,31 @@
-<footer class="bg-customBlack2 text-grayText2 padding-x py-10 md:py-14 lg:py-16 xl:py-24">
-    
-    <div class="flex flex-col md:flex-row gap-10 justify-between md:items-center">
-        <div class="flex gap-y-8 flex-col justify-between">
-            <img src="assets/footer-logo.svg" routerLink="/" class="w-[150px] cursor-pointer lg:w-[200px] xl:w-[250px]" alt="">
+<footer class="bg-[#3F6952] text-white padding-x py-10 md:py-14 lg:py-16 xl:py-24">
 
-            <div class="font-jakarta text-sm md:text-base">
-                <p class="font-medium">+234 809 000 000</p>
-                <a class="block md:mt-2.5 text-sm" href="malito: support@lift.agency">support@lift.agency</a>
+    
+    <div class="grid gap-4 sm:gap-7 md:grid-cols-[auto_auto] lg:grid-cols-[auto_auto_auto] md:gap-10 justify-between md:items-center">
+        <img src="assets/footer-logo.svg" routerLink="/" class="w-[200px] cursor-pointer lg:w-[240px]" alt="">
+        
+        <div class="flex gap-6 lg:gap-10 items-center underline underline-offset-2">
+            <a class="block font-light" routerLink="/about">About</a>
+            <a class="block font-light" routerLink="/sectors">Sectors</a>
+            <a class="block font-light" routerLink="/partners">Partners</a>
+            <a class="block font-light" routerLink="/lift-media">Sitemap</a>
+        </div>
+        
+        <div class="grid">
+            <div class="font-light text-sm md:text-base">
+                <p class="flex items-center gap-1">
+                    <img src="assets/icons/location.png" alt="">
+                    <span>Plot 234, Maitama Drive, Abuja</span>
+                </p>
+                <p class="flex items-center gap-1">
+                    <img src="assets/icons/phone.png" alt="">
+                    <span>+234 809 000 000</span>
+                </p>
             </div>
         </div>
-
-        <div class="grid grid-cols-[auto_auto] lg:gap-20 xl:gap-[150px] gap-10 md:grid-cols-[auto_auto_auto]">
-            <div class="flex flex-col gap-10">
-                <a class="block" routerLink="/about">About</a>
-                <a class="block" routerLink="/sectors">Sectors</a>
-            </div>
-            <div class="flex flex-col gap-10">
-                <a class="block" routerLink="/partners">Partners</a>
-                <a class="block" routerLink="/lift-media">Lift Media</a>
-            </div>
-
-            <div class="col-span-2 md:col-span-1">
-                <div class="font-medium font-jakarta text-white text-lg">Subscribe to our  NewsLetter</div>
+        
+            <!-- <div class="col-span-2 md:col-span-1">
+                <div class="font-medium  text-white text-lg">Subscribe to our  NewsLetter</div>
 
                 <form class="relative mt-5 rounded-lg overflow-hidden ">
                     <input type="email" class="h-12 text-customBlack w-full pl-3 py-3 pr-[62px] outline-customGreen bg-white" placeholder="Get product updates">
@@ -29,25 +33,24 @@
                         <img src="assets/icons/white-right-arrow.png" alt="">
                     </button>
                 </form>
-            </div>
-        </div>
+            </div> -->
     </div>
 
-    <div class="my-10 h-[1px] bg-grayText2"></div>
+    <div class="my-10 h-[1px] bg-white"></div>
 
-    <div class="flex gap-6 flex-col md:flex-row items-center justify-between">
+    <div class="flex gap-6 items-center justify-between">
+        <div class="text-xs md:text-sm text-white">Copyright (c) 2023</div>
         <div class="flex gap-3 items-center">
-            <a class="socials" href="https://www.linkedin.com">
-                <img src="assets/icons/linkedin.png" alt="">
-            </a>
             <a class="socials" href="https://www.facebook.com">
                 <img src="assets/icons/facebook.png" alt="">
             </a>
             <a class="socials" href="https://www.twitter.com">
                 <img src="assets/icons/twitter.png" alt="">
             </a>
+            <a class="socials" href="https://www.instagram.com">
+                <img src="assets/icons/instagram.png" alt="">
+            </a>
         </div>
-        <div class="text-sm text-white">© 2020 Lift Media. All rights reserved</div>
     </div>
 
 </footer>
