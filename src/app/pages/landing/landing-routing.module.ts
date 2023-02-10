@@ -25,6 +25,7 @@ const routes: Routes = [
       // { path: 'manufacturing', component: ManufacturingComponent },
       // { path: 'msme', component: MsmeComponent },
       // { path: 'partners', component: ProductsComponent},
+      
       {
         path: '**',
         redirectTo: '',
