@@ -1,160 +1,60 @@
-<header class="">
-  <app-header></app-header>
+<app-header></app-header>
+<app-sectors-view 
+  header="Agriculture"  
+  [headerBanner]="'agriculture/agriculture.png'"
 
-  <div class="padding-x py-10 md:py-14 xl:pb-24 font-jakarta">
-      <h1 data-aos="fade-down" data-aos-duration="1000" class="text-customBlack font-extrabold text-3xl md:text-5xl lg:text-6xl">Agriculture</h1>
+  [stats]="[
+    {stat: '>4.56M', text: 'Smallholders financed', image: 'assets/images/agriculture/agriculture_1.png'},
+    {stat: '>5.96M', text: 'Hectares of farmland cultivated', image: 'assets/images/agriculture/agriculture_2.png'},
+    {stat: '21', text: 'Commodities (Planted/ reared)', image: 'assets/images/agriculture/agriculture_3.png'},
+    {stat: '>50', text: 'Integrated rice mills establishment and operations financed', image: 'assets/images/agriculture/agriculture_4.png'},
+    {stat: '2.5M', text: 'Contribution to 9Million MT rice paddy national output in 2021', image: 'assets/images/agriculture/agriculture_5.png'},
+    {stat: '2.42M', text: 'Contribution to maize national output, which at peaked 12.2Million MT in 2022', image: 'assets/images/agriculture/agriculture_6.png'},
+    {stat: '679', text: 'Large-scale agricultural projects financed', image: 'assets/images/agriculture/agriculture_7.png'},
+    {stat: '>13M', text: 'Direct and indirect job created', image: 'assets/images/agriculture/agriculture_8.png'},
+  ]"
 
-      <div class="mt-10">
-          <img class="w-full md:h-[300px] 2xl:h-[unset] object-cover rounded-lg" src="assets/images/agriculture/agric-farmland.png" alt="">
-      </div>
-  </div>
-</header>
-
-<div class="padding-x cbn-bg grid md:grid-cols-2 lg:grid-cols-4  text-white py-10 gap-10 xl:gap-[60px] md:py-14 xl:py-20 bg-customBlack2">
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-    <p class="">4.56+</p>
-    <p>Million Smallholder Finances</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
-      <p>5.96M+</p>
-      <p>Million Smallholder Finances</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
-      <p>21</p>
-      <p>Commodities Planted/Reared</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="700">
-      <p>>50</p>
-      <p>Integrated Rice Mills establishment and operations financed</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="900">
-      <p>2.5M<span class="text-base">MT</span></p>
-      <p>Contribution to 9.0million MT rice paddy national output in 2021</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1100">
-      <p>2.42M<span class="text-base">MT</span></p>
-      <p>Contribution to maize national output, which peaked at 12.2 million MT in 2022</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1300">
-      <p>6.79</p>
-      <p>Large Scale Agricultural Projects Financed</p>
-  </div>
-  <div class="stats" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="1500">
-      <p>13M+</p>
-      <p>Direct and Indirect Jobs created</p>
-  </div>
-</div>
-
-<div class="bg-[#F1F0EC] padding-x mt-10 md:mt-14 py-10 md:py-14 xl:pb-24 font-jakarta">
-    <div class="grid lg:grid-cols-[1fr_40%] lg:gap-[14px]">
-        <div>
-            <mat-accordion>
-                <mat-expansion-panel [expanded]="true" >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">ABP</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Anchor Borrowers Program</p>
-
-                    <ul>
-                        <li>Established in November 17th 2015</li>
-                        <li>Create an economic linkage between smallholder famers and agro-processors/Anchors</li>
-                        <li>Increase banks' financing to the agricultural sector</li>
-                        <li>Reduce agricultural commodity importation and conserve external reserves</li>
-                        <li>Increase capacity utilization of agricultural firms</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">CACS</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Commercial Agriculture Credit Scheme</p>
-
-                    <ul>
-                        <li>Established in 2009</li>
-                        <li>Fast track the development of the agricultural sector</li>
-                        <li>Enhance national food security</li>
-                        <li>Provide input for the industrial sector on a sustainable basis</li>
-                        <li>Reduce the cost of credit for agricultural production</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">AADS</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Accelerated Agriculture Development Scheme</p>
-
-                    <ul>
-                        <li>Established to engage a minimum of 10,000 youth per state, including the FCT in agricultural production.</li>
-                        <li>To promote National food security in each State through sustained interactions amongst stakeholders across the agricultural value chain.</li>
-                        <li>Designed to open more land for agricultural activities and improve access to infrastructure.</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">MPAS</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Modified Paddy Aggregation Scheme</p>
-
-                    <ul>
-                        <li>Established in 2021</li>
-                        <li>Provide credit facilities to Integrated Rice Millers at single digit interest rate to increase local production towards effecting lower prices.</li>
-                        <li>Enhance national food security iii). Diversify the economy and conserve foreign exchange.</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">MMAS</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Modified Maize Aggregation Scheme</p>
-
-                    <ul>
-                        <li>Established in 2021</li>
-                        <li>Provide credit facilities to Integrated Rice Millers at single digit interest rate to increase local production towards effecting lower prices ii). Enhance national food security.</li>
-                        <li>Diversify the economy and conserve foreign exchange</li>
-                        <li>Provide credit facilities to feed millers, poultry farmers, silo and warehouse operators Integrated feed millers and confectionery companies using maize as their major component at single digit interest rate iv) Enhance national food security.</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel >
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="text-[#F0EDED]">P-AADS</div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div>
-                    <p>Private Sector-Led Accelerated Agriculture Development Scheme</p>
-
-                    <ul>
-                        <li>Fast track land clearing for primary production of agricultural commodities.</li>
-                        <li>Promote food security through the provision of large contiguous land for agricultural production across all states.</li>
-                        <li>Collaborate with agro-processors engaged in backward integration by providing financing for extended land clearing in proximal locations for cultivating commodities for supply of industrial raw materials.</li>
-                        <li>Support other capable stakeholders interested in unlocking land for agriculture through appropriate financing.</li>
-                        <li>Engender job creation for individual farmers that will cultivate on the cleared land.</li>
-                    </ul>
-                  </div>
-                </mat-expansion-panel>
-              </mat-accordion>
-        </div>
-        
-        <div class="hidden lg:block h-full farm-crop-bg rounded-lg bg-center"></div>
-    </div>
-</div>
+  [listing]="[
+    {image: 'assets/images/agriculture/list_1.png', title: 'Anchor Borrowers Program', shortTitle: 'APB', list: [
+      'Established in November 17th 2015',
+      'Create an economic linkage between smallholder famers and agro-processors/Anchors',
+      'Increase banks\' financing to the agricultural sector',
+      'Reduce agricultural commodity importation and conserve external reserves',
+      'Increase capacity utilization of agricultural firms'
+    ]},
+    {image: 'assets/images/agriculture/list_2.png', title: 'Commercial Agriculture Credit Scheme', shortTitle: 'CACS', list: [
+      'Established in 2009',
+      'Fast track the development of the agricultural sector',
+      'Enhance national food security',
+      'Provide input for the industrial sector on a sustainable basis',
+      'Reduce the cost of credit for agricultural production'
+    ]},
+    {image: 'assets/images/agriculture/list_3.png', title: 'Accelerated Agriculture Development Scheme', 
+      shortTitle: 'AADS', list: [
+      'Established to engage a minimum of 10,000 youth per state, including the FCT in agricultural production.',
+      'To promote National food security in each State through sustained interactions amongst stakeholders across the agricultural value chain.',
+      'Designed to open more land for agricultural activities and improve access to infrastructure.'
+    ]},
+    {image: 'assets/images/agriculture/list_4.png', title: 'Modified-Paddy Aggregation Scheme', 
+      shortTitle: 'M-PAS', list: [
+      'Established in 2021',
+      'Provide credit facilities to Integrated Rice Millers at single digit interest rate to increase local production towards effecting lower prices.',
+      'Enhance national food security iii). Diversify the economy and conserve foreign exchange.',
+    ]},
+    {image: 'assets/images/agriculture/list_5.png', title: 'Modified-Maize Aggregation Scheme', 
+      shortTitle: 'M-MAS', list: [
+      'Established in 2021',
+      'Provide credit facilities to Integrated Rice Millers at single digit interest rate to increase local production towards effecting lower prices ii). Enhance national food security.',
+      'Diversify the economy and conserve foreign exchange',
+      'Provide credit facilities to feed millers, poultry farmers, silo and warehouse operators Integrated feed millers and confectionery companies using maize as their major component at single digit interest rate iv) Enhance national food security.',
+    ]},
+    {image: 'assets/images/agriculture/list_6.png', title: 'Private Sector-Led Accelerated Agriculture Development Scheme', 
+      shortTitle: 'P-AADS', list: [
+      'Fast track land clearing for primary production of agricultural commodities.',
+      'Promote food security through the provision of large contiguous land for agricultural production across all states.',
+      'Collaborate with agro-processors engaged in backward integration by providing financing for extended land clearing in proximal locations for cultivating commodities for supply of industrial raw materials.',
+      'Support other capable stakeholders interested in unlocking land for agriculture through appropriate financing.',
+      'Engender job creation for individual farmers that will cultivate on the cleared land.',
+    ]},
+  ]"
+></app-sectors-view>
