@@ -12,17 +12,17 @@
 
 <div class="padding-x mt-8">
     <div [ngStyle]="{'background-image': 'url(../../../assets/images/landing-header-overlay.png), url(../../../assets/images/' + headerBanner + ')'}"
-        class="rounded-lg py-[55px] bg-cover text-4xl md:text-[40px] md:py-[112px] text-center md:text-left md:px-20 text-white">
+        class="rounded-lg py-[55px] bg-cover text-4xl md:text-[40px] lg:text-[64px] md:py-[112px] text-center md:text-left md:px-20 text-white">
         {{header | titlecase}}
     </div>
 </div>
 
-<div class="padding-x mt-2 grid md:grid-cols-2 lg:grid-cols-4 gap-2">
+<div class="padding-x mt-2 grid md:grid-cols-2 xl:grid-cols-4 gap-2">
     <div *ngFor="let stat of stats" class="rounded-lg text-white relative hover-me overflow-hidden">
-        <img [src]="stat.image" class="rounded-lg object-cover w-full h-[400px] md:h-[300px]" alt="">
+        <img [src]="stat.image" class="rounded-lg object-cover w-full h-[400px] md:h-[300px] xl:h-[unset] xl:aspect-square" alt="">
     
         <div data-aos="fade-down" data-aos-duration="1000" class="absolute bottom-0 left-0 right-0 rounded-lg p-6 bg-customGreen text-white">
-            <div class="font-[900] text-3xl xs:text-[48px]">{{stat.stat}}</div>
+            <div class="font-[900] text-3xl xs:text-[48px]">{{stat.stat}} <span *ngIf="stat.mt" class="text-[#4CC4F4] text-lg xs:text-2xl">MT</span> </div>
             <div class="text-lg mt-2 font-light md:text-xl w-[90%]">{{stat.text}}</div>
         </div>
     </div>

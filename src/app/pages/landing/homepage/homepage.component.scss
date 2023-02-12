@@ -5,7 +5,9 @@
 }
 
 .watermark-bg {
-    background-image: url(../../../../assets/images/watermark.png), linear-gradient(#FAFAFA, #FAFAFA);
+    background-image: url(../../../../assets/graylogo.png), linear-gradient(#FAFAFA, #FAFAFA);
+    background-size: 350px, cover;
+    background-repeat: space, no-repeat;
 }
 
 iframe {
