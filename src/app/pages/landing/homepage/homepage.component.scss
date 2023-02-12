@@ -20,3 +20,17 @@ iframe {
         aspect-ratio: 5 / 2;
     }
 }
+
+.animate-width {
+    animation-name: grow;
+    animation-duration: 0.5s;
+}
+
+@keyframes grow {
+    0% {
+        max-width: 0;
+    }
+    100% {
+        max-width: 20px;
+    }
+}
