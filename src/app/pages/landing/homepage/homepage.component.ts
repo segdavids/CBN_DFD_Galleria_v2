@@ -39,6 +39,8 @@ export class HomepageComponent {
           '#0034BA',
           '#8F5E05',
         ],
+        hoverOffset: 25,
+        offset: 5
       },
     ],
   };
@@ -49,19 +51,21 @@ export class HomepageComponent {
     aspectRatio: 1.5,
     plugins: {
       legend: {
-        display: false,
-        // position: 'right',
-        // align: 'center',
-        // labels: {
-        //   boxHeight: 8,
-        //   boxWidth: 8,
-        //   boxPadding: 8,
-        //   color: '#050505',
-        //   font: {
-        //     size: 10,
-        //     family: 'Plus Jakarta Sans',
-        //   },
-        // },
+        display: true,
+        position: 'bottom',
+        align: 'center',
+        labels: {
+          boxHeight: 12,
+          boxWidth: 12,
+          boxPadding: 8,
+          usePointStyle: true,
+          pointStyle: 'circle',
+          color: '#050505',
+          font: {
+            size: 10,
+            family: 'Plus Jakarta Sans',
+          },
+        },
       },
     },
   };
@@ -89,6 +93,24 @@ export class HomepageComponent {
         items: 6
       }
     },
-    nav: false
+    nav: false,
+    stagePadding: 75
+  }
+
+  customLabels = [
+    {text: 'Agriculture', value: 31.3, color: '#07A254'},
+    {text: 'Electricity and Power', value: 25.3, color: '#4D7DF7'},
+    {text: 'Manufacturing', value: 18.33, color: '#6B6158'},
+    {text: 'Healthcare', value: 1.97, color: '#FA393A'},
+    {text: 'Energy and Infrastructure', value: 8.03, color: '#1DD9A4'},
+    {text: 'Services', value: 15.07, color: '#FBB206'},
+  ]
+
+  getWidth(value: number): string {
+    let total = 0
+    for (let n of this.customLabels) {
+      total = total + n.value
+    }
+    return ((value / total) * 100) + 'px'
   }
 }

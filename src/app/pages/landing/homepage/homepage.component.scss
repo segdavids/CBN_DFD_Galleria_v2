@@ -1,11 +1,11 @@
 .header-banner {
-    background-image: url(../../../../assets/images/landing-header-overlay.png), url(../../../../assets/images/gif.png);
+    background-image: url(../../../../assets/landing.gif);
     background-size: cover, cover;
     background-position: center, center;
 }
 
 .watermark-bg {
-    background-image: url(../../../../assets/graylogo.png), linear-gradient(#FAFAFA, #FAFAFA);
+    background-image: url(../../../../assets/images/faint-logo.png), linear-gradient(#FAFAFA, #FAFAFA);
     background-size: 350px, cover;
     background-repeat: space, no-repeat;
 }

@@ -16,6 +16,8 @@ import { MatExpansionModule} from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
 import { ProductsComponent } from './products/products.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SuccessStoriesComponent } from './homepage/success-stories/success-stories.component';
+import { NewsletterComponent } from './homepage/newsletter/newsletter.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     InfrastructureComponent,
     ExportComponent,
     LandingLayoutComponent,
-    ProductsComponent
+    ProductsComponent,
+    SuccessStoriesComponent,
+    NewsletterComponent
   ],
   imports: [
     CommonModule,
