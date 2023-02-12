@@ -12,7 +12,7 @@ export class HomepageComponent {
     { label: 'Agriculture:  31.3%', color: '#009C19' },
     { label: 'Electricity and Power: 29.3%', color: '#FFAE1B' },
     { label: 'Manufacturing: 18.63%', color: '#54C5EB' },
-    { label: 'Healthcare: 1.97%', color: '#74057D' },
+    { label: 'Healthcare: 1.97%', color: '#FA393A' },
     { label: 'Energy and Infrastructure : 8.12%', color: '#0034BA' },
     { label: 'Services :15.07%', color: '#8F5E05' },
   ];
@@ -35,12 +35,12 @@ export class HomepageComponent {
           '#009C19',
           '#FFAE1B',
           '#54C5EB',
-          '#74057D',
+          '#FA393A',
           '#0034BA',
           '#8F5E05',
         ],
-        hoverOffset: 25,
-        offset: 5
+        hoverOffset: 50,
+        offset: 25
       },
     ],
   };
@@ -62,8 +62,8 @@ export class HomepageComponent {
           pointStyle: 'circle',
           color: '#050505',
           font: {
-            size: 10,
-            family: 'Plus Jakarta Sans',
+            size: 12,
+            family: 'Lato',
           },
         },
       },
