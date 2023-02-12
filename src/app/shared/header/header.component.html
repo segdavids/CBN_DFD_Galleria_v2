@@ -5,9 +5,18 @@
     <mat-menu #menu="matMenu">
         <a routerLink="/" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Home</a>
         <a routerLink="/about" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">About Us</a>
-        <a routerLink="/sectors" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Sectors</a>
+        <a (click)="$event.stopPropagation()" [matMenuTriggerFor]="sectors" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Sectors</a>
         <a routerLink="/partners" class="font-semibold text-base text-center block p-3 w-[300px] text-customBlack cursor-pointer">Partners</a>
         <a class="mx-auto block p-3"><button class="px-5 py-[6px] rounded-md  w-full bg-customGreen text-white font-medium text-sm">Sign In</button> </a>
+    </mat-menu>
+
+    <mat-menu #sectors="matMenu">
+        <a routerLink="/export" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Export</a>
+        <a routerLink="/msme" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">MSMEs</a>
+        <a routerLink="/agriculture" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Agriculture</a>
+        <a routerLink="/health" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Health Care</a>
+        <a routerLink="/infrastructure" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Infrastructure and Energy</a>
+        <a routerLink="/manufacturing" class="font-semibold text-base hover:underline hover:text-customGreen text-center block p-3 w-[300px] text-customBlack cursor-pointer">Manufacturing</a>
     </mat-menu>
 </nav>
 
