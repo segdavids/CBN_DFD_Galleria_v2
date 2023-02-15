@@ -39,8 +39,8 @@ export class HomepageComponent {
           '#0034BA',
           '#8F5E05',
         ],
-        hoverOffset: 50,
-        offset: 25
+        hoverOffset: 15,
+        borderRadius: 10
       },
     ],
   };
